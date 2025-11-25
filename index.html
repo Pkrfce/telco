@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>NEXA UI Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+
+     <!-- ================= AUTH ================= -->
+        <section id="auth" class="auth-section">
+            <div class="auth-card">
+                <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="signin">SIGN IN</button>
+                <button class="auth-tab" data-tab="signup">SIGN UP</button>
+            </div>
+
+            <!-- SIGN IN PANEL -->
+            <form class="auth-panel active" data-panel="signin">
+                <div class="input-group">
+                    <input type="text" placeholder="Email/No telp" required />
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required />
+                </div>
+                <button type="submit" class="btn btn-primary full-width">SIGN IN</button>
+            </form>
+
+            <!-- SIGN UP PANEL -->
+            <form class="auth-panel" data-panel="signup">
+                <div class="input-group">
+                    <input type="text" placeholder="Nama lengkap" required />
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Email/No telp" required />
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required />
+                </div>
+                <button type="submit" class="btn btn-primary full-width">SIGN UP</button>
+            </form>
+        </section>
+
+        <!-- ================= MAIN APP ================= -->
+        <section id="mainApp" class="main-app hidden">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="logo-area">
+                    <div class="logo-icon">N</div>
+                    <div class="logo-text">NEXA</div>
+                </div>
+            
+                <nav class="sidebar-menu">
+                    <button class="sidebar-link active" data-page="dashboard">
+                        <span class="icon">🏠</span>
+                        <span>Home</span>
+                    </button>
+                    <button class="sidebar-link" data-page="search">
+                        <span class="icon">🔍</span>
+                        <span>Cari</span>
+                    </button>
+                    <button class="sidebar-link" data-page="favorite">
+                        <span class="icon">❤</span>
+                        <span>Favorite</span>
+                    </button>
+                    <button class="sidebar-link" data-page="profile">
+                        <span class="icon">👤</span>
+                        <span>Profile</span>
+                    </button>
+                </nav>
+
+                <button class="sidebar-logout-btn">
+                    <span>></span>
+                    <span>Logout</span>
+                </button>
+            </aside>
+      
+            <!-- CONTENT -->
+            <main class="content">
+                <!-- DASHBOARD PAGE -->
+                <section class="page page-dashboard active" data-page="dashboard">
+                    <header class="topbar">
+                        <div>
+                            <div class="topbar-subtext">Monday, 27 Oktober 2025</div>
+                            <h1 class="topbar-title">Dashboard</h1>
+                        </div>
+                        <div class="topbar-right">
+                            <button class="icon-circle">🔔</button>
+                            <div class="topbar-pill"></div>
+                        </div>
+                    </header>
+
+                    <section class="greeting-card">
+                        <div>
+                            <div class="hello-text">Hai, Harum Aster</div>
+                            <div class="number-text">0812 3456 7890</div>
+                            <div class="small-line">Berlaku s.d 27 Desember 2025</div>    
+                        </div>
+                        <div class="pulsa-kuota-card">
+                            <div class="pulsa-card">
+                                <div class="pulsa-info">
+                                    <div class="pulsa-balance">Rp 15.000</div>
+                                    <div class="pulsa-label-row">
+                                        <span class="pulsa-icon">👛</span>
+                                        <span class="pulsa-label">Pulsa</span>
+                                    </div>
+                                </div>
+                                <button class="pulsa-plus">+</button>
+                            </div>
+                            <div class="kuota-card">
+                                <div class="kuota-info">
+                                    <div class="kuota-balance">Hemat Kuat 24</div>
+                                    <div class="kuota-label-row">
+                                        <span class="kuota-icon">👛</span>
+                                        <span class="kuota-label">Kuota</span>
+                                    </div>
+                                </div>
+                                <button class="kuota-plus">+</button>
+                            </div>
+                        </div>
+                        <div class="quota-box">
+                            <div class="quota-row">
+                                <div class="quota-label">Sisa Kuota</div>
+                                <div class="quota-value">11,5 GB</div>
+                            </div>    
+                            <div class="points-bar">
+                                <div class="points-fill"></div>
+                            </div>
+                            <div class="quota-row">
+                            <div class="points-label">Poin Kamu</div>
+                            <div class="quota-value">1.500</div>
+                            </div>
+                            <div class="points-bar">
+                                <div class="points-fill"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="section-block">
+                        <h2 class="section-title">Beranda Kamu</h2>
+                        <div class="grid-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">🛡</div>
+                                <div class="feature-text">Anti Spam / Scam</div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">⚡</div>
+                                <div class="feature-text">Super Deal</div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">📶</div>
+                                <div class="feature-text">Hemat Kuat 24</div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">⭐</div>
+                                <div class="feature-text">Poin Kamu</div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">🕒</div>
+                                <div class="feature-text">History</div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">❤</div>
+                                <div class="feature-text">Favorite</div>
+                            </div>
+                        </div>    
+                    </section>
+
+                    <section class="section-block">
+                        <h2 class="section-title">Rekomendasi Terbaik</h2>
+                        <div class="card-row">
+                            <article class="package-card small">
+                                <div class="badge">Paket Super Deal</div>
+                                <div class="package-gb">15 GB</div>
+                                <div class="package-footer">
+                                    <span>10 Hari</span>
+                                    <span>Rp 20.000</span>
+                                </div>
+                            </article>
+                            <article class="package-card small">
+                                <div class="badge">Paket Super Deal</div>
+                                <div class="package-gb">15 GB</div>
+                                <div class="package-footer">
+                                    <span>10 Hari</span>
+                                    <span>Rp 20.000</span>
+                                </div>
+                            </article>
+                            <article class="package-card small">
+                                <div class="badge">Paket Super Deal</div>
+                                <div class="package-gb">15 GB</div>
+                                <div class="package-footer">
+                                    <span>10 Hari</span>
+                                    <span>Rp 20.000</span>
+                                </div>   
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="section-block">
+                        <h2 class="section-title">Rekomendasi Mingguan</h2>
+                        <div class="card-row">
+                            <article class="weekly-card">
+                                <div class="weekly-header">
+                                    <div>Hemat Kuat 24<br /><span>15 GB</span></div>
+                                    <div>7 Hari</div>
+                                </div>
+                                <div class="weekly-footer">
+                                    <span><s>Rp 64.000*</s></span>
+                                    <span>Rp 53.000</span>
+                                </div>
+                            </article>
+                            <article class="weekly-card">
+                                <div class="weekly-header">
+                                    <div>Hemat Kuat 24<br /><span>15 GB</span></div>
+                                    <div>7 Hari</div>
+                                </div>
+                                <div class="weekly-footer">
+                                    <span><s>Rp 64.000*</s></span>
+                                    <span>Rp 53.000</span>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="section-block">
+                        <h2 class="section-title center">Penawaran Menarik</h2>
+                        <div class="grid-2">
+                            <div class="offer-placeholder"></div>
+                            <div class="offer-placeholder"></div>
+                            <div class="offer-placeholder"></div>
+                            <div class="offer-placeholder"></div>
+                        </div>
+                    </section>
+                </section>
+
+                <!-- SEARCH PAGE -->
+                <section class="page page-search" data-page="search">
+                    <!-- top nav (Home, Cari, Favorite, Profile) -->
+                    <div class="search-topnav">
+                        <button class="topnav-link active" data-page="dashboard">
+                            <span>Home</span>
+                        </button>
+                        <button class="topnav-link" data-page="search">
+                            <span>Cari</span>
+                        </button>
+                        <button class="topnav-link" data-page="favorite">
+                            <span>Favorite</span>
+                        </button>
+                        <button class="topnav-link" data-page="profile">
+                            <span>Profile</span>
+                        </button>
+                    </div>
+
+                    <!-- filter tabs -->
+                    <div class="search-filters">
+                        <button class="filter-tab active" data-mode="harian">Harian</button>
+                        <button class="filter-tab" data-mode="mingguan">Mingguan</button>
+                        <button class="filter-tab" data-mode="bulanan">Bulanan</button>
+                    </div>
+
+                    <!-- usage bar -->
+                    <div class="usage-card">
+                        <div class="usage-title">Pemakaian Bulan ini</div>
+                        <div class="usage-bar">
+                            <div class="usage-fill"></div>
+                        </div>
+                        <div class="usage-value">24 GB</div>
+                    </div>
+
+                    <!-- package list -->
+                    <section class="package-list">
+                        <article class="package-row">
+                            <div>
+                                <div class="row-title">Happy 2GB</div>
+                                <div class="row-subtitle">1 Hari | Perbarui Otomatis</div>
+                            </div>
+                            <div class="row-price" 
+                                data-harian="Rp 7.000" 
+                                data-mingguan="Rp 8.000" 
+                                data-bulanan="Rp 9.000">
+                                Rp 7.000
+                            </div>
+                        </article>
+
+                        <article class="package-row">
+                            <div>
+                                <div class="row-title">Happy 2GB</div>
+                                <div class="row-subtitle">1 Hari | Perbarui Otomatis</div>
+                            </div>
+                            <div class="row-price"
+                                data-harian="Rp 7.000" 
+                                data-mingguan="Rp 7.000" 
+                                data-bulanan="Rp 7.000">
+                                Rp 7.000
+                            </div>
+                        </article>
+
+                        <article class="package-row">
+                            <div>
+                                <div class="row-title">Happy Malam</div>
+                                <div class="row-subtitle">1 Hari | Perbarui Otomatis</div>
+                            </div>
+                            <div class="row-price"
+                                data-harian="Rp 5.000" 
+                                data-mingguan="Rp 6.000" 
+                                data-bulanan="Rp 7.000">
+                                Rp 5.000
+                            </div>
+                        </article>
+                    </section>
+                </section>
+
+                <!-- FAVORITE PAGE -->
+                <section class="page" data-page="favorite">
+                    <h2 class="page-heading">Favorite</h2>
+                    <p>Daftar paket favorit kamu akan tampil di sini.</p>
+                </section>
+
+                <!-- PROFILE PAGE -->
+                <section class="page" data-page="profile">
+                    <h2 class="page-heading">Profile</h2>
+                    <div class="profile-card">
+                        <div class="profile-avatar">HA</div>
+                        <div>
+                            <div class="profile-name">Harum Aster</div>
+                            <div class="profile-number">0812 3456 7890</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-secondary">Edit Profile</button>
+                </section>
+
+            </main>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+  // Ambil elemen yang dibutuhkan
+  const authSection = document.getElementById("auth");
+  const mainApp = document.getElementById("mainApp");
+  const logoutBtn = document.querySelector(".sidebar-logout-btn");
+
+  // Pastikan tombolnya ketemu dulu
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", function () {
+      // Sembunyikan main app
+      mainApp.classList.add("hidden");
+      // Tampilkan halaman login
+      authSection.classList.remove("hidden");
+
+      // (Opsional) kosongkan input di form login & signup
+      document
+        .querySelectorAll("#auth input")
+        .forEach((input) => (input.value = ""));
+
+      // (Opsional) set tab SIGN IN jadi aktif lagi
+      const signinTab = document.querySelector('.auth-tab[data-tab="signin"]');
+      const signupTab = document.querySelector('.auth-tab[data-tab="signup"]');
+      const signinPanel = document.querySelector('.auth-panel[data-panel="signin"]');
+      const signupPanel = document.querySelector('.auth-panel[data-panel="signup"]');
+
+      if (signinTab && signupTab && signinPanel && signupPanel) {
+        signinTab.classList.add("active");
+        signupTab.classList.remove("active");
+        signinPanel.classList.add("active");
+        signupPanel.classList.remove("active");
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
